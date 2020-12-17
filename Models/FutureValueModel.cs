@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Murach_lab1.Models
 {
     public class FutureValueModel
-    {
+    {   [Required(ErrorMessage ="Please enter a monthly investment amount.")]
+        [Range(1, 500, ErrorMessage ="Monthly investment amount must be between 1 and 500.")]
         public decimal MonthlyInvestment { get; set; }
         public decimal YearlyInterestRate { get; set; }
         public int Years { get; set; }
