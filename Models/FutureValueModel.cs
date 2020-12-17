@@ -11,10 +11,10 @@ namespace Murach_lab1.Models
         [Range(1, 500, ErrorMessage ="Monthly investment amount must be between 1 and 500.")]
         public decimal MonthlyInvestment { get; set; }
         [Required(ErrorMessage = "Please enter a yearly interest rate.")]
-        [Range(0.01, 10, ErrorMessage = "Yearly interest rate must be between 0.01 and 10.")]
+        [Range(0.1, 10.0, ErrorMessage = "Yearly interest rate must be between 0.1 and 10.")]
         public decimal YearlyInterestRate { get; set; }
         [Required(ErrorMessage = "Please enter the number of years.")]
-        [Range(1, 500, ErrorMessage = "The number of years must be between 1 and 100.")]
+        [Range(1, 50, ErrorMessage = "The number of years must be between 1 and 50.")]
         public int Years { get; set; }
         public decimal CalculateFutureValue()
         {
