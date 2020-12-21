@@ -9,10 +9,10 @@
     </header>
     <main>
         <form asp-action="Index" method="post" class="form-horizontal">
-            <div asp-validation-summary="All"></div>
+            <!-- <div asp-validation-summary="All"></div> -->
             <div class="row">
                 <label asp-for="MonthlyInvestment" class="control-label col-sm-3">Monthly Investment: </label>
-                <input asp-for="MonthlyInvestment" class="form-control col-sm-3"/>
+                <input asp-for="MonthlyInvestment" class="form-control col-sm-3" />
                 <span asp-validation-for="MonthlyInvestment" class="text-danger col"></span>
             </div>
             <div class="row">
@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <label class="control-label col-sm-3">Future Value: </label>
-                <input value="@ViewBag.FV.ToString()" readonly class="form-control col-sm-3"/>
+                <input value="@ViewBag.FV.ToString()" readonly class="form-control col-sm-3" />
             </div>
             <div class="row">
                 <div class="col offset-sm-3 pl-0">
