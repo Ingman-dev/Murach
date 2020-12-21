@@ -2,9 +2,13 @@
     padding: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
+#logo {
+    float:left;
+}
 h1 {
     margin-top: 0;
     color: navy;
+    float: right;
 }
 label {
     display: inline-block;
